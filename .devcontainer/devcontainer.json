@@ -1,0 +1,12 @@
+{
+	"image": "mcr.microsoft.com/devcontainers/universal:2",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"LeetCode.vscode-leetcode",
+				"ms-vscode.cpptools",
+				"charliermarsh.ruff"
+			]
+		}
+	}
+}
