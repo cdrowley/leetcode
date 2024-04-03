@@ -5,15 +5,19 @@
  */
 
 // @lc code=start
-class Solution {
+class Solution
+{
 public:
-    bool isPalindrome(int x) {
-        if(x < 0) return false;
+    bool isPalindrome(int x)
+    {
+        if (x < 0)
+            return false;
 
         int tmp = x;
         long long res = 0;
 
-        while(tmp) {
+        while (tmp)
+        {
             /*
             - times 10 to move the digit left
             - add last digit of tmp to res
@@ -23,7 +27,7 @@ public:
             - ( 0 * 10) + (123 % 10) = 3
             - ( 3 * 10) + ( 12 % 10) = 32
             - (32 * 10) + (  1 % 10) = 321
-           */ 
+           */
             res = res * 10 + tmp % 10;
             tmp /= 10;
         }
@@ -31,4 +35,3 @@ public:
     }
 };
 // @lc code=end
-
